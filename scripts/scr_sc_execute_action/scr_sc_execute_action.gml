@@ -14,6 +14,13 @@ if (actor_spell[? "heal"]) {
 	actor_target.heal_animation = true;
 }
 
+if (actor_spell[? "heal_self"]) {
+	actor.stats[CURRENT_HP] += actor_spell[? "heal_self"];
+	// make sure hp not over max
+	actor.stats[CURRENT_HP] = actor.stats[CURRENT_HP] > actor.stats[MAX_HP] ? actor.stats[MAX_HP] : actor.stats[CURRENT_HP];
+	actor.heal_animation = true;
+}
+
 if (actor_spell[? "mp_cost"]) {
 	actor.stats[CURRENT_MP] -= actor_spell[? "mp_cost"];
 }

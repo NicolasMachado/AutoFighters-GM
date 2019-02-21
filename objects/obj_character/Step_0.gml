@@ -1,5 +1,7 @@
 /// @description Animation dmg/heal
 
+var any_animation_running = false;
+
 // Damage animation
 if (damage_animation) {
 	sprite_color = make_color_rgb(255, 0, 0);

@@ -3,7 +3,7 @@
 stats = [];
 items = [];
 type = "ally";
-spells = [0, 1];
+spells = [0, 1, 2];
 
 // vars
 color_change_speed = 7;

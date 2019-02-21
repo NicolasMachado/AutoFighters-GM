@@ -12,3 +12,9 @@ var basic_heal = ds_map_create();
 scr_default_spell_constructor(basic_heal, spell_counter, "Basic Heal");
 ds_map_replace(basic_heal, "heal", 50);
 ds_map_replace(basic_heal, "mp_cost", 20);
+
+var vamprire_strike = ds_map_create();
+scr_default_spell_constructor(vamprire_strike, spell_counter, "Vampire Strike");
+ds_map_replace(vamprire_strike, "move_to_target", true);
+ds_map_replace(vamprire_strike, "heal_self", 30);
+ds_map_replace(vamprire_strike, "can_target_self", false);
