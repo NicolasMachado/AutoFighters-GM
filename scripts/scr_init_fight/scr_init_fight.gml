@@ -14,6 +14,7 @@ for (var i = 0; i < num_fighters; i++) {
 
 var num_enemies = irandom_range(1, 3);
 
+// add random number of enemies
 for (var i = 0; i < num_enemies; i++) {
 	var enemy = instance_create_layer(0, 0, "Fighters", obj_enemy);
 	var spot = instance_find(obj_enemy_spot, i);
