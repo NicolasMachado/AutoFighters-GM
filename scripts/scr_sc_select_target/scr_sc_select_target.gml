@@ -31,7 +31,8 @@ if (ds_list_size(selected_targets) == 0) { // 0 target
 	actor_target = ds_list_find_value(selected_targets, 0);
 } else { // multiple targets
 	show_debug_message("Multiple targets!");
-	actor_target = ds_list_find_value(selected_targets, irandom_range(0, ds_list_size(selected_targets)-1));
+	//actor_target = ds_list_find_value(selected_targets, irandom_range(0, ds_list_size(selected_targets)-1));
+	actor_target = selected_targets;
 }
 
 // finally output target

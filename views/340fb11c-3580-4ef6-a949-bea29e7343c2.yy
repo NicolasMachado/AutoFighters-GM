@@ -10,7 +10,9 @@
         "f1fec7dc-e8b3-44b1-9108-682cb8a4c365",
         "805ad56b-6ad4-4569-8779-72dabfdab169",
         "f94ba829-1400-42d0-8600-f3d7e6b0f993",
-        "b0f717f4-eb09-43fc-a10a-a0cb0d622326"
+        "b0f717f4-eb09-43fc-a10a-a0cb0d622326",
+        "26784c6a-74b4-4ae5-a577-d0162eb307ee",
+        "f5f3efc6-7f8f-4b4b-bdc5-ecab924d3381"
     ],
     "filterType": "GMScript",
     "folderName": "Combat steps",

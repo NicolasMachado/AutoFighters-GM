@@ -6,3 +6,4 @@ draw_text(room_width/2, 0, time);
 if (current_step > -1) {
 	 draw_text(room_width/2, 50, steps[current_step]);
  }
+draw_text(room_width/2, 25, current_step);

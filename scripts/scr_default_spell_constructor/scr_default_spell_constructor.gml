@@ -17,6 +17,7 @@ ds_map_set(map, "can_target_self", true);
 ds_map_set(map, "can_target_dead", false);
 ds_map_set(map, "mp_cost", false);
 ds_map_set(map, "heal_self", false);
+ds_map_set(map, "actions_array", []);
 
 all_spells[i] = map;
 spell_counter++;

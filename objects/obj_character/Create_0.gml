@@ -3,17 +3,19 @@
 stats = [];
 items = [];
 type = "ally";
+// list of character spells by ID
 spells = [0, 1, 2];
 
 // vars
 color_change_speed = 7;
-damage_animation = false;
+damage_animation_trigger = false;
 damage_animation_running = false;
-heal_animation = false;
+heal_animation_trigger = false;
 heal_animation_running = false;
+death_animation_trigger = false;
+death_animation_running = false;
 moving_to_target = false;
 moving_back_to_place = false;
-die_animation = false;
 is_dead = false;
 
 sprite_color = make_color_rgb(255, 255, 255);
