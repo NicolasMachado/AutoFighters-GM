@@ -9,8 +9,8 @@ for (var i = 0; i < array_length_1d(actor_spells); i++) {
 
 //spell_id = actor.stats[CURRENT_MP] < 20 ? 0 : 1; // debug à faire = check si assez de mana pour caster
 
-actor_spell = obj_controller.all_spells[spell_id];
-// We copy the action queue from the spell to the timer action queue to execute
+actor_spell = obj_controller.spells_codex[spell_id];
+// We copy the action queue from the spell to the timer action queue to be executed
 ds_queue_clear(actions_queue);
 ds_queue_copy(actions_queue, ds_map_find_value(actor_spell, "actions_queue"));
 

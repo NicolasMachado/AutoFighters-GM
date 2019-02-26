@@ -1,4 +1,5 @@
 /// Here we record each spell in a separate map, using a default constructor
+// called by obj_controller
 
 spell_counter = 0;
 
@@ -29,14 +30,14 @@ ds_queue_enqueue(basic_heal_actions, scr_act_move_back_to_spot);
 
 
 // VAMPIRE STRIKE
-var vamprire_strike = ds_map_create();
-scr_default_spell_constructor(vamprire_strike, spell_counter, "Vampire Strike");
-ds_map_replace(vamprire_strike, "move_to_target", true);
-ds_map_replace(vamprire_strike, "heal_self", 30);
-ds_map_replace(vamprire_strike, "can_target_self", false);
+var vampire_strike = ds_map_create();
+scr_default_spell_constructor(vampire_strike, spell_counter, "Vampire Strike");
+ds_map_replace(vampire_strike, "move_to_target", true);
+ds_map_replace(vampire_strike, "damage", 30);
+ds_map_replace(vampire_strike, "can_target_self", false);
 // actions
-var vamprire_strike_actions = ds_queue_create();
-ds_map_replace(vamprire_strike, "actions_queue", vamprire_strike_actions);
-ds_queue_enqueue(vamprire_strike_actions, scr_act_move_to_target);
-ds_queue_enqueue(vamprire_strike_actions, scr_act_inflict_damage_to_target);
-ds_queue_enqueue(vamprire_strike_actions, scr_act_move_back_to_spot);
+var vampire_strike_actions = ds_queue_create();
+ds_map_replace(vampire_strike, "actions_queue", vampire_strike_actions);
+ds_queue_enqueue(vampire_strike_actions, scr_act_move_to_target);
+ds_queue_enqueue(vampire_strike_actions, scr_act_inflict_damage_to_target);
+ds_queue_enqueue(vampire_strike_actions, scr_act_move_back_to_spot);

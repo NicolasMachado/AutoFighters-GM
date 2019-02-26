@@ -19,5 +19,5 @@ ds_map_set(map, "mp_cost", false);
 ds_map_set(map, "heal_self", false);
 ds_map_set(map, "actions_array", []);
 
-all_spells[i] = map;
+spells_codex[i] = map;
 spell_counter++;

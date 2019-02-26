@@ -17,7 +17,7 @@ scr_set_fake_data_to_file();
 scr_load_from_file();
 
 // Init spells
-all_spells = [];
+spells_codex = [];
 scr_init_spells();
 
 // place fighters on spots

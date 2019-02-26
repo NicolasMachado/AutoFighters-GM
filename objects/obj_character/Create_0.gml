@@ -14,7 +14,8 @@ heal_animation_trigger = false;
 heal_animation_running = false;
 death_animation_trigger = false;
 death_animation_running = false;
-moving_to_target = false;
+move_to_target_trigger = false;
+move_to_target_running = false;
 moving_back_to_place = false;
 is_dead = false;
 

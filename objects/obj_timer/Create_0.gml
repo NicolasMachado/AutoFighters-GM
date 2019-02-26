@@ -14,21 +14,15 @@ actor_spell = -1;
 
 // queue of all animations to play if its size is above 0, the timer stops
 // and the animations are played one by one
-actions_currently_running = 0;
+animations_currently_running = 0;
 actions_queue = ds_queue_create();
+executing_queue_head = false;
 
 // steps in order
 steps = [
 	"reset_ap",
 	"select_spell",
 	"select_target",
-	/*"move_to_target",
-	"animating",
-	"execute_action",
-	"animating",
-	"move_back_into_place",
-	"animating",
-	"fill_actions_queue",*/
-	"execute_actions",
+	"execute_actions_queue",
 	"end_turn"	
 ];
