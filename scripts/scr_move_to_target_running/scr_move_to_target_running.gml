@@ -8,5 +8,4 @@ if (point_distance(x, y, target.x + face_position, target.y) > 20) {
 	speed = 0;
 	move_to_target_running = false;
 	obj_timer.animations_currently_running--;
-	obj_timer.executing_queue_head = false;
 }

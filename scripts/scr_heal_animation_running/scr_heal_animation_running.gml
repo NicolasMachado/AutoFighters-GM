@@ -7,5 +7,4 @@ if (blue >= 255 - color_change_speed) {
 	heal_animation_running = false;
 	sprite_color = c_white;
 	obj_timer.animations_currently_running--;
-	obj_timer.executing_queue_head = false;
 }

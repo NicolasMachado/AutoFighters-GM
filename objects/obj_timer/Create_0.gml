@@ -16,7 +16,8 @@ actor_spell = -1;
 // and the animations are played one by one
 animations_currently_running = 0;
 actions_queue = ds_queue_create();
-executing_queue_head = false;
+current_actions_list = ds_list_create();
+temp_spell_queue = ds_queue_create();
 
 // steps in order
 steps = [
